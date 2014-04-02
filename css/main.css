@@ -1,0 +1,378 @@
+.logo{
+    width: 240px;
+    padding: 5px 5px;
+}
+
+.quote{
+    position: fixed;
+    top: 80px;
+    right: 80px;
+    font-family: 'Oxygen', sans-serif;
+    color: #00CED1;
+    font-size: 20px;
+}
+
+.navigation li a{
+    text-decoration: none;
+    color: #00CED1;
+}
+
+.navigation li a:hover{
+    color: #778899;
+}
+
+.navigation li{
+    list-style: none;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 20px;
+}
+
+.navigation {
+    display: inline-block;
+    position: fixed;
+    left: 40px;
+    bottom: 40px;
+    margin-bottom: 50px;
+}
+
+.onpage{
+    font-family: 'Oswald', sans-serif;
+    color: #000080;
+}
+
+.homepageimage img{
+    width: 880px;
+    padding-left: 100px;
+    display: block;
+    margin: auto;
+}
+
+.imagecontainer{
+    position: absolute;
+    top: 230px;
+    left: 15%;
+    width: 85%;
+    height: 650px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.imagewindow{
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 20px;
+    margin-right: -9999px;
+}
+
+.imagewindow img{
+    box-sizing: border-box;
+    display: inline-block;
+    height: 510px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.textcontainer{
+    display: inline-block;
+    position: fixed;
+    left: 300px;
+    bottom: 100px;
+    background-color: #191970;
+    padding: 50px 100px;
+    border-radius: 10px;
+    margin-right: 70px;
+}
+
+.textcontainer p{
+    display: inline-block;
+    color: #AFEEEE;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+.textcontainer p .mobile{
+    font-family: 'Oxygen', sans-serif;
+}
+
+.textcontainer ul li a{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #AFEEEE;
+    margin: 0px 40px 0px 0px;
+}
+
+.textcontainer ul li a:hover{
+    color: #708090;
+}
+
+.textcontainer ul{
+    text-align: center;
+}
+
+
+.textcontainer ul li{
+    list-style: none;
+    display: inline;
+    text-align: center;
+}
+
+.textcontainer .contact{
+    font-size: 31px;
+}
+
+.textcontainer .fashion{
+    font-size: 55px;
+}
+
+.textcontainer .other{
+    font-size: 52px;
+}
+
+.toggleMenu{
+    display: none;
+}
+
+.menu ul.show{
+    display: block;
+}
+
+/*mobile styles*/
+
+@media screen and (max-width: 1750px){
+
+    .textcontainer p{
+        font-size: 27px;
+    }
+
+    .textcontainer .fashion, .textcontainer .other{
+        font-size: 48px;
+    }
+
+    .textcontainer .contact{
+        font-size: 29px;
+    }
+}
+
+@media screen and (max-width: 1550px){
+
+    .textcontainer p{
+        font-size: 24px;
+    }
+
+    .textcontainer .fashion, .textcontainer .other{
+        font-size: 43px;
+    }
+
+    .textcontainer .contact{
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 1350px){
+
+    .textcontainer p{
+        font-size: 20px;
+    }
+
+    .textcontainer .fashion, .textcontainer .other{
+        font-size: 39px;
+    }
+
+    .textcontainer .contact{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1250px){
+
+    .logo{
+        width: 200px;
+    }
+
+    .quote{
+        font-size: 18px;
+    }
+
+    .homepageimage img{
+        width: 800px;
+    }
+
+    .navigation li{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+
+    .logo{
+        width: 200px;
+    }
+
+    .quote{
+        display: none;
+    }
+
+    .homepageimage img{
+        width: 700px;
+    }
+
+    .navigation li{
+        font-size: 18px;
+    }
+
+    .textcontainer .mobile{
+        display: none;
+    }
+
+    .textcontainer p{
+        font-size: 27px;
+    }
+
+    .textcontainer .fashion, .textcontainer .other{
+        font-size: 34px;
+    }
+
+    .textcontainer .contact{
+        font-size: 25px;
+    }
+
+    a.toggleMenu{
+        width: 30px;
+        display: block;
+        color: #48D1CC;
+        text-decoration: none;
+        border-bottom: 2px solid #48D1CC;
+        border-top: 2px solid #48D1CC;
+        text-indent: -9999px;
+        line-height: 0.8;
+        position: absolute;
+        bottom: 600px;
+    }
+
+    a.toggleMenu:after{
+        content: ''; /*pseudoelements must have a content property, it can be empty*/
+        display: block;
+        border-bottom: 2px solid #48D1CC;
+        position: absolute;
+        width: 100%;
+        bottom: 40%;
+    }
+
+    .menu ul{
+        display: none;
+        position: absolute;
+        bottom: 425px;
+        padding: 0px;
+    }
+
+    .menu li{
+        display: block;
+    }
+
+    ul{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+
+    .homepageimage img{
+        width: 600px;
+    }
+
+    .textcontainer p{
+        font-size: 20px;
+    }
+
+    .textcontainer .fashion, .textcontainer .other{
+        font-size: 30px;
+    }
+
+    .textcontainer .contact{
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 775px){
+
+    .homepageimage img{
+        width: 500px;
+    }
+
+    .textcontainer{
+        padding: 25px 50px;
+    }
+
+    .textcontainer p{
+        font-size: 18px;
+    }
+
+    .textcontainer p span{
+        font-family: 'Oxygen', sans-serif;
+    }
+
+    .textcontainer .fashion, .textcontainer .other{
+        font-size: 23px;
+    }
+
+    .textcontainer .contact{
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .homepageimage img{
+        width: 400px;
+    }
+
+    .textcontainer{
+        padding: 15px 25px;
+    }
+
+    .textcontainer p{
+        font-size: 15px;
+    }
+
+    .textcontainer .fashion, .textcontainer .other{
+        font-size: 18px;
+    }
+
+    .textcontainer .contact{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    .homepageimage img{
+        width: 300px;
+    }
+
+    .textcontainer{
+        padding: 10px 20px;
+    }
+
+    .textcontainer p{
+        font-size: 12px;
+    }
+
+    .textcontainer .fashion, .textcontainer .other{
+        font-size: 16px;
+    }
+
+    .textcontainer .contact{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .homepageimage img{
+        width: 225px;
+    }
+}
